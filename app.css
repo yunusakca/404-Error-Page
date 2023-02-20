@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes move {
+    0% {margin-top: 1px;}
+    10% {margin-top: 5px;}
+    20% {margin-top: 9px;}
+    30% {margin-top: 13px;}
+    40% {margin-top: 17px;}
+    50% {margin-top: 21px;}
+    60% {margin-top: 17px;}
+    70% {margin-top: 13px;}
+    80% {margin-top: 9px;}
+    90% {margin-top: 5px;}
+    100% {margin-top: 1px;}
+}
+
+.container {
+    top: 50%;
+    bottom: 50%;
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: red;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.btn {
+    align-self: flex-start;
+}
+
+h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 3.5vw;
+    margin: 5vh 0;
+}
+
+p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5vw;
+    margin: 5vh 0;
+}
+
+button {
+    border: 0;
+    padding: 1vw 3vw;
+    color: white;
+    background-color: #FF4F5B;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.8vw;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+img {
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
